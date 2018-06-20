@@ -34,8 +34,9 @@ header h1{
 	left:10px;
 	top:170px;
 	bottom:10px;
-	width:200px;
+	width:15%;
 	border:solid #fff 1px;
+	overflow: auto;
 }
 .left ul {
 	overflow:auto;
@@ -44,6 +45,9 @@ header h1{
 	height:30px;
 	line-height:30px;
 	cursor:pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .left ul li.selected{
 	color:green;
@@ -52,7 +56,8 @@ header h1{
 	top:170px;
 	right:10px;
 	bottom:10px;
-	left:220px;
+	left:calc(15% + 20px);
+	left:-webkit-calc(15% + 20px);
 	border:solid #fff 1px;
 }
 #type{
